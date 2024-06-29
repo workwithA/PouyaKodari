@@ -14,7 +14,7 @@ const Navbar = () => {
     >
       {/* navbar icon */}
       <div
-        className="w-8 h-7 z-50 mt-5 mr-2 sm:mr-5 lg:mt-10 lg:mr-10 absolute"
+        className="w-8 h-7 z-50 mt-5 mr-2 sm:mr-5 lg:mt-10 lg:mr-10 absolute animate-pulse"
         onClick={() => changeNavStatus(!navStatus)}
       >
         <div
@@ -36,14 +36,14 @@ const Navbar = () => {
 
       {/* navbar contents */}
       <div
-        className={`w-full h-screen transition-all duration-700 bg-fuchsia-400 ease-in-out flex justify-center items-center flex-col gap-10 text-2xl font-bold tracking-widest absolute z-40 ${
-          navStatus ? "translate-y-0" : "-translate-y-[110%]"
+        className={`w-full h-screen transition-all duration-700 ease-in-out flex justify-center items-center flex-col gap-10 lg:gap-12 xl:gap-16 absolute z-40 bg-slate-200 ${
+          navStatus ? "translate-y-0 opacity-100" : "-translate-y-[110%] opacity-0"
         }`}
       >
-        <h2>HOME</h2>
-        <h2>ARCH</h2>
-        <h2>GALLERY</h2>
-        <h2>AD</h2>
+        <Link to='/' onClick={()=>changeNavStatus(false)} className="font-blackOps text-2xl tracking-widest sm:text-3xl xl:text-4xl cursor-pointer hover:scale-125 transition-all duration-300">HOME</Link>
+        <Link to='/arch' onClick={()=>changeNavStatus(false)} className="font-blackOps text-2xl tracking-widest sm:text-3xl xl:text-4xl cursor-pointer hover:scale-125 transition-all duration-300">ARCH</Link>
+        <Link to='/gallery' onClick={()=>changeNavStatus(false)} className="font-blackOps text-2xl tracking-widest sm:text-3xl xl:text-4xl cursor-pointer hover:scale-125 transition-all duration-300">GALLERY</Link>
+        <Link to='/ad' onClick={()=>changeNavStatus(false)} className="font-blackOps text-2xl tracking-widest sm:text-3xl xl:text-4xl cursor-pointer hover:scale-125 transition-all duration-300">AD</Link>
       </div>
     </motion.div>
   );
