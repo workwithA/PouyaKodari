@@ -1,13 +1,13 @@
-import Footer from "../components/home/Footer"
 import Header from "../components/home/Header"
-import Main from "../components/home/Main"
+// import Main from "../components/home/Main"
+// import Footer from "../components/home/Footer"
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <Main />
-      <Footer />
+      {/* <Main />
+      <Footer /> */}
     </div>
   )
 }

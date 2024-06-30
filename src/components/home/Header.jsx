@@ -3,7 +3,7 @@ import background from "../../assets/PouyaKodari.png";
 const Header = () => {
   return (
     <div className="flex justify-center items-center w-full overflow-hidden h-screen bg-gray-300">
-      <img src={background} alt="Pouya Kodari" className="min-w-[175%]" />
+      <img src={background} alt="Pouya Kodari" className="min-w-[175%] 375:min-w-[150%] 425:min-w-[132%]510:min-w-[115%] sm:min-w-[88%] xl:min-w-[60%]" />
 
       {/* texts */}
       <div className="w-full h-full bg-black absolute bg-opacity-40 flex flex-col items-center justify-center">

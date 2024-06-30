@@ -9,6 +9,11 @@ export default {
       fontFamily:{
         blackOps: "Black Ops One",
         roboto: "Roboto"
+      },
+      screens:{
+        375: "375px",
+        425: "425px",
+        510: "510px"
       }
     },
   },
